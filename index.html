@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Gruppen Messenger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mein Gruppen Messenger</h1>
+    <div id="status"></div>
+    
+    <div class="user-id-section">
+        <input type="text" id="userIdInput" placeholder="Deine ID">
+        <button id="saveIdBtn">ID speichern</button>
+    </div>
+
+    <div class="header-bar">
+        <h3>Deine Gruppen</h3>
+        <button id="createGroupBtn">+</button>
+    </div>
+    <div id="savedGroups">
+        </div>
+
+    <div id="createGroupForm" style="display:none;">
+        <h3>Neue Gruppe erstellen</h3>
+        <input type="text" id="newGroupNameInput" placeholder="Gruppenname">
+        <textarea id="memberIdsInput" placeholder="IDs der Mitglieder (durch Komma trennen)"></textarea>
+        <button id="submitGroupBtn">Erstellen</button>
+        <button id="cancelCreateBtn">Abbrechen</button>
+    </div>
+
+    <div id="chatWindow" style="display:none;">
+        <h3 id="currentGroupName"></h3>
+        <div id="messages"></div>
+        <input type="text" id="messageInput" placeholder="Nachricht eingeben...">
+        <button id="sendBtn">Senden</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
